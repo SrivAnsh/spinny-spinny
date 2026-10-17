@@ -12,7 +12,6 @@ var launch_timer := 0.0
 var reset_requested := false
 var start_pos: Vector2
 
-
 func _ready():
 	start_pos = get_centre_left()
 	global_position = start_pos
