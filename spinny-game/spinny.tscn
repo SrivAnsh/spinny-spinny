@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://6wa1uihrfr01"]
 
 [ext_resource type="Script" uid="uid://dcutp6lskul80" path="res://spinny.gd" id="1_2fvls"]
-[ext_resource type="Texture2D" uid="uid://dnkygvx2u1kjd" path="res://icon.svg" id="2_2fvls"]
+[ext_resource type="Texture2D" uid="uid://bkadnqm4td2b6" path="res://assets/sprites/circle.png" id="2_2fvls"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7n4d4"]
 friction = 0.0
