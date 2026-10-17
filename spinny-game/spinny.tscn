@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://6wa1uihrfr01"]
+
+[ext_resource type="Script" uid="uid://dcutp6lskul80" path="res://spinny.gd" id="1_2fvls"]
+[ext_resource type="Texture2D" uid="uid://dnkygvx2u1kjd" path="res://icon.svg" id="2_2fvls"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7n4d4"]
+friction = 0.0
+bounce = 0.8
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lpmtk"]
+radius = 32.0
+
+[node name="Spinny" type="RigidBody2D" unique_id=2372621]
+physics_material_override = SubResource("PhysicsMaterial_7n4d4")
+gravity_scale = 0.0
+linear_damp = 1.0
+script = ExtResource("1_2fvls")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1183015071]
+texture = ExtResource("2_2fvls")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=734151310]
+shape = SubResource("CircleShape2D_lpmtk")
+
+[node name="Arrow" type="Line2D" parent="." unique_id=2050342934]
+points = PackedVector2Array(0, 0, 80, 0)
+width = 4.0
